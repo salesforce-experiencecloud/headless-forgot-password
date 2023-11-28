@@ -34,7 +34,7 @@ public with sharing class headlessForgotPasswordController {
     private static String verifyToken(String token) 
     {
 
-        String recaptchaSecretKey = '6LflLewnAAAAAD6HOK9_vG3-Ub4c9j5J_8GRd56J'; //harcoded for POC only
+        String recaptchaSecretKey = '[recaptchaSecretKeyValue]'; //harcoded for POC only
 
         Http http = new Http();
         HttpRequest request = new HttpRequest();
@@ -125,7 +125,7 @@ public with sharing class headlessForgotPasswordController {
         //do not hardcode, make configurable
         jwt.setAud('https://login.salesforce.com');  
         //do not hardcode, make configurable (client ID of connected app)
-        jwt.setIss('3MVG9SemV5D80oBdLH2z7Jayd56YB_OIomPEZW501oGaneUXBf0Xf0KgArbOHQxZlvBJyTxdPP41C1SIAHnPq'); 
+        jwt.setIss('3MVG9SemV5D80oBdLH2z7Jayd56YB_OIomPEZW510114o67G99a00n0eUXBf0Xf0KgArbOHQxZlvBJyTxdPP41C1SIAHnPq'); 
         
         //Additional claims to set scope
         Map<String, Object> claims = new Map<String, Object>();
